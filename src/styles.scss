@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+:root {
+    --yummy-black: #1e1e1e;
+    --yummy-gray: #A4A4A4;
+    --yummy-gray-light: #d2d2d2aa;
+    --yummy-gray-superlight: #F0F1F4;
+    --yummy-gray-dark: #868686;
+    --yummy-purple: #B6B8D6;
+    --yummy-purple-dark: #6f58c9;
+    --yummy-green: #BBDBD1;
+    --font-yeseva: 'Yeseva One', cursive;
+    --font-rubik: 'Rubik', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: white;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: var(--yummy-black);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--yummy-gray-dark);
+  }

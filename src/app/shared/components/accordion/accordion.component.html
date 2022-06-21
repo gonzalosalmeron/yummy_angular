@@ -1,0 +1,13 @@
+<div class="accordion">
+    <div class="accordion__title" (click)="expandAcordion = !expandAcordion">
+        <div class="accordion__title_box">
+            <div class="accordion__icon"><ng-content select="icon"></ng-content></div>
+            <h3 class="accordion__question"><ng-content select="question"></ng-content></h3>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" class="accordion__expand_icon" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+        </svg>
+    </div>
+    
+    <p ngClass="{{ expandAcordion ? 'accordion__expanded' : 'accordion__expanded_not' }}" class="accordion__answer"><ng-content select="answer"></ng-content></p>
+</div>

@@ -1,0 +1,112 @@
+#recipes {
+    background: var(--yummy-gray-superlight);
+    width: 100vw;
+    height: calc(100vh - 70.83px);
+
+    .container {
+        padding: 40px 20px 20px 20px;
+
+        .recipes__box {
+            background: white;
+            width: 85%;
+            margin: 0 auto;
+            border-radius: 22px;
+            padding: 20px 46px;
+            box-sizing: border-box;
+            font-family: var(--font-rubik);
+        
+            .recipes__box_header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+        
+                h3 {
+                    font-weight: 100;
+                    font-size: 1.05rem;
+                    color: var(--yummy-black);
+                }
+        
+                a {
+                    background: var(--yummy-gray-light);
+                    border: none;
+                    padding: 8px 12px;
+                    color: rgb(73, 73, 73);
+                    border-radius: 10px;
+                    text-decoration: none;
+                    font-size: 0.8rem;
+                }
+            }
+        
+            .recipes__box_content {
+                table {
+                    width: 100%;
+                    border-radius: 18px;
+                    overflow: hidden;
+
+                    .table__btn_edit {
+                        margin-right: 10px;
+                        svg {
+                            width: 20px;
+                            color: rgb(88, 88, 88);
+                            padding: 4px;
+                            border-radius: 8px;
+
+                            &:hover {
+                                background: rgba(209, 209, 209, 0.502);
+
+                            }
+                        }
+                    }
+                    .table__btn_delete {
+                        background: transparent;
+                        border: none;
+
+                        svg {
+                            width: 20px;
+                            color: rgb(251, 72, 72);
+                            padding: 4px;
+                            border-radius: 8px;
+
+                            &:hover {
+                                background: rgba(251, 72, 72, 0.154);
+                            }
+                        }
+                    }
+                    .table__head {
+                        background-color: rgb(245, 245, 245);
+                    }
+
+                    tr {
+                        border-bottom: 1px solid black !important;
+                    }
+        
+                    th {
+                        text-align: start;
+                        font-weight: 100;
+                        font-size: 0.80rem;
+                        padding: 8px 20px;
+                        color: rgb(73, 73, 73);
+                        text-transform: uppercase;
+                    }
+        
+                    td {
+                        padding: 8px 20px;
+                        color: rgb(73, 73, 73);
+                        font-size: 0.92rem;
+                        text-align: left !important;
+                        
+                        &:hover {
+                            background: rgba(128, 128, 128, 0.056);
+                        }
+        
+                        &:nth-child(2) {
+                            text-align: end;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

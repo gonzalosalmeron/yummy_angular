@@ -1,0 +1,171 @@
+.nav {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    div:first-child {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav__links {
+            display: flex;
+            justify-content: flex-end;
+            gap: 2.8rem;
+    
+            .nav__link {
+                font-family: var(--font-rubik);
+                font-weight: 500;
+                font-size: 0.95rem;
+                color: var(--yummy-black);
+                text-decoration: none;
+
+                &:hover {
+                    color: var(--yummy-gray-dark);
+                }
+            }
+        }
+    }
+
+    .nav__logo {
+        font-family: var(--font-yeseva);
+        color: var(--yummy-black);
+        font-size: 1.05rem;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    .nav__mobile_menu {
+        display: none;
+
+        * {
+            height: 2px;
+            background: var(--yummy-black);
+            border-radius: 5px;
+            margin: 1px 0;
+            transform-origin: left;
+            transition: all 0.5s;
+        }
+
+        &.open :first-child {
+            transform: rotate(45deg) translateY(-3.2px);
+        }
+        &.open :nth-child(2) {
+            transform:translateX(20px);
+            opacity: 0;
+        }
+        &.open :last-child {
+            transform: rotate(-45deg) translateY(3.2px);
+        }
+    }
+
+    .nav__mobile_options {
+        display: none;
+
+        &.open {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+            font-family: var(--font-rubik);
+            font-weight: 500;
+            font-size: 1.25rem;
+            color: var(--yummy-black);
+
+            li:not(:last-child) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    .nav__admin {
+        display: flex;
+        justify-content: space-between !important;
+        align-items: center;
+
+        .nav__links_admin {
+            font-family: var(--font-rubik);
+            font-size: 0.95rem;
+            margin-left: 100px;
+
+            * {
+                text-decoration: none;
+                color: var(--yummy-gray);
+                cursor: pointer;
+                margin-right: 25px;
+            }
+
+        }
+
+        .nav__admin_right {
+            .nav__admin_lgt {
+                border: 1px solid var(--yummy-gray-light);
+                padding: 6px 10px;
+                border-radius: 8px;
+                background: transparent;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-family: var(--font-rubik);
+                font-size: 0.85rem;
+
+                &:hover {
+                    background: var(--yummy-gray-light);
+                }
+            }
+        }
+    }
+    .is-active {
+        color: black !important
+    }
+
+    
+}
+
+@media only screen and (max-width: 750px) {
+
+    .nav {
+        
+        .nav__links {
+            display: none !important;
+        }
+
+        .nav__mobile_menu {
+            position: absolute;
+            right: 20px;
+            display: flex !important;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            height: 16px;
+            width: 24px;
+            cursor: pointer;
+            z-index: 20;
+
+            &.open {
+                position: fixed !important;
+            }
+        }
+
+        .nav__mobile_options {
+            height: 100vh;
+            width: 100vw;
+            position: fixed;
+            z-index: 10;
+            background: var(--yummy-purple);
+            top: 0;
+            left: 0;
+            display: flex;
+            opacity: 0;
+            justify-content: center;
+            align-items: center;
+            transform: translateY(-100vh);
+            transition: transform 0.5s ease-out, opacity 0.2s ease;
+        }
+    }
+    
+    
+}

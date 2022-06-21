@@ -1,0 +1,49 @@
+<nav class="nav">
+    <div *ngIf="navbar == 1">
+        <div routerLink="/" class="nav__logo">
+            <h2>yummy!</h2>
+        </div>
+        
+        <div class="nav__links">
+            <a class="nav__link" href="#download_section">Descarga</a>
+            <a class="nav__link" href="#info_section">Info</a>
+            <a class="nav__link" href="#meet_us_section">Cómo empezar</a>
+            <a class="nav__link" href="#help_section">Preguntas frecuentes</a>
+        </div>
+
+        <div class="nav__mobile_menu" (click)="showMenu = !showMenu" ngClass="{{ showMenu ? 'open' : '' }}">
+            <div class="nav__mobile_menu_top"></div>
+            <div class="nav__mobile_menu_middle"></div>
+            <div class="nav__mobile_menu_bottom"></div>
+        </div>
+
+        <div class="nav__mobile_options" ngClass="{{ showMenu ? 'open' : '' }}">
+            <ul>
+                <li>Descarga</li>
+                <li>Info</li>
+                <li>Cómo empezar</li>
+                <li>Preguntas frecuentes</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div *ngIf="navbar == 2" class="nav__admin">
+        <div class="nav__admin_left">
+            <div routerLink="/" class="nav__logo">
+                <h2>yummy!</h2>
+            </div>
+    
+            <div class="nav__links_admin">
+                <a routerLink="/admin/dashboard" routerLinkActive="is-active" class="nav__link">Dashboard</a>
+                <a routerLink="/admin/categories" routerLinkActive="is-active" class="nav__link">Categorías</a>
+                <a routerLink="/admin/recipes" routerLinkActive="is-active" class="nav__link">Recetas</a>
+            </div>
+        </div>
+        <div class="nav__admin_right">
+            <buttonc (click)="logout()" class="nav__admin_lgt">Cerrar sesión</buttonc>
+        </div>
+
+    </div>
+</nav>
+

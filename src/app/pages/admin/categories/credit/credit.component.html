@@ -1,0 +1,18 @@
+<section id="categories_credit">
+    <div class="container">
+        <app-back-button></app-back-button>
+        <div class="categories__credit_box">
+            <div class="categories__form">
+                <div class="form_box__input_box">
+                    <label for="name">Nombre</label>
+                    <input [(ngModel)]="name" id="name" type="text" required>
+                    <span>{{ error }}</span>
+                </div>
+                <div class="form_box__button">
+                    <button (click)="createCategory()" *ngIf="credit == 1" [disabled]="creating">Crear</button>
+                    <button (click)="editCategory()" *ngIf="credit == 2">Editar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
