@@ -1,6 +1,5 @@
 # yummy
 <p align="center">
-  <img src="media/logo_yummy.png" width="150" >
   <h3 align="center" margin-top="-40">YUMMY</h3>
 </p>
 
