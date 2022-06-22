@@ -57,6 +57,7 @@
                 background-color: black;
                 border-radius: 14px;
                 padding: 10px 40px;
+                text-decoration: none;
                 border: 0;
                 font-family: var(--font-rubik);
                 font-weight: 500;
@@ -120,6 +121,7 @@
     height: calc(100vh);
     max-height: 800px;
     overflow: hidden;
+    min-height: 820px;
 
     .container {
         display: grid;
@@ -217,6 +219,7 @@
     padding: 0 20px;
     background-color: rgba(201, 200, 200, 0.196);
     position: relative;
+    min-height: 760px !important;
     
     .container {
         height: 100%;
@@ -547,7 +550,7 @@ footer {
     }
 
     #info_section {
-        margin-top: 80px;
+        margin-top: 40px;
         padding-bottom: 160px;
 
         .container {
@@ -607,12 +610,12 @@ footer {
     }
 
     #help_section {
-        height: calc(80vh);
+        margin: 60px 0;
+        height: auto;
         max-height: 800px;
         overflow: hidden;
         font-family: var(--font-rubik);
         padding: 0 20px;
-        margin-top: 80px;
     
         .container {
             height: 100%;
