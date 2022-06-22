@@ -1,6 +1,5 @@
-# yummy
 <p align="center">
-  <h3 align="center" margin-top="-40">YUMMY</h3>
+  <h2 align="center" margin-top="-40">YUMMY</h3>
 </p>
 
 <br>
