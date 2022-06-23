@@ -22,11 +22,11 @@
                     <tbody>
                         <tr *ngFor="let recipe of recipes; let i = index">
                             <td>{{ recipe.name }}</td>
-                            <td>{{ recipe.description }}</td>
-                            <td>{{ recipe.ingredients }}</td>
-                            <td>{{ recipe.preparation_time }}</td>
-                            <td>{{ recipe.diners }}</td>
-                            <td>{{ recipe.tag }}</td>
+                            <td><div><p>{{ recipe.description }}</p></div></td>
+                            <td><div><p>{{ recipe.ingredients }}</p></div></td>
+                            <td><div><p>{{ recipe.preparation_time }}</p></div></td>
+                            <td><div><p>{{ recipe.diners }}</p></div></td>
+                            <td><div><p>{{ recipe.tag }}</p></div></td>
                             <td>
                                 <button (click)="deleteRecipe(recipe.id!, i)" class="table__btn_delete">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

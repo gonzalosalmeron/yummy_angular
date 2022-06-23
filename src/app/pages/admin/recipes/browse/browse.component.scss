@@ -1,7 +1,7 @@
 #recipes {
     background: var(--yummy-gray-superlight);
     width: 100vw;
-    height: calc(100vh - 70.83px);
+    min-height: calc(100vh - 70.83px);
 
     .container {
         padding: 40px 20px 20px 20px;
@@ -103,6 +103,14 @@
         
                         &:nth-child(2) {
                             text-align: end;
+                        }
+
+                        p {
+                            display: -webkit-box;
+                            max-width: 200px;
+                            -webkit-line-clamp: 4;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
                         }
                     }
                 }
