@@ -1,27 +1,36 @@
-# Yummy
+<p align="center">
+  <h2 align="center" margin-top="-40">YUMMY</h3>
+</p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.1.3.
+<br>
 
-## Development server
+## 👀 Qué es Yummy?
+Yummy es una red social de recetas en la que podrás crear y compartir nuevas con tus amigos para satisfacer la necesidad de todos aquellos que necesitan ideas en el día a día para sus comidas. Yummy también incorpora una lista de compra para que no te olvides de echar al carro de la compra todo lo que necesites. Podrás guardar en favoritos las recetas que más te gusten para siempre tenerlas al alcance
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+------
 
-## Code scaffolding
+## 📱 Plataformas 
+Esta landing page está realizada para que se pueda ver en todos los dispositivos desde el navegador
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## 🎮 Funcionamiento y maquetación
+Diseño en [Figma](https://www.figma.com/file/lc6b9AhU2ySa6TzrixpCoE/YUMMY!?node-id=262%3A20)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Diapositivas<br>
+<img src="src/assets/images/new/1.png">
+<img src="src/assets/images/new/2.png">
+<img src="src/assets/images/new/3.png">
+<img src="src/assets/images/new/4.png">
+<img src="src/assets/images/new/5.png">
+<img src="src/assets/images/new/6.png">
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📄 Documentación PDF
+Se puede descargar la documentación en pdf desde [aquí](https://github.com/gonzalosalmeron/yummy_angular/blob/main/src/assets/images/new/Yummy.pdf)
 
-## Running end-to-end tests
+## 📚 Bibliografía
+[StackOverflow](https://es.stackoverflow.com/)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Otros repositorios
+[Yummy App](https://github.com/gonzalosalmeron/yummy)
